@@ -1,0 +1,107 @@
+/*--- Google Font Speciment Outfit ---*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+/*--- Color, Font Variables ---*/
+:root {
+  --primary-White: hsl(0, 0%, 100%);
+  --Light-Gray: hsl(212, 45%, 89%);
+  --Grayish-Blue: hsl(220, 15%, 55%);
+  --Dark-Blue: hsl(218, 44%, 22%);
+  --font-outfit: 'Outfit', sans-serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main_container {
+  background-color: var(--Light-Gray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.main_container .QR_card {
+  background-color: var(--primary-White);
+  width: 320px;
+  height: 490px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  position: relative;
+}
+
+.main_container .QR_card .QR_img {
+  width: 289px;
+  border-radius: 10px;
+  position: relative;
+  top: 16px;
+}
+
+.main_container .QR_card .card_header {
+  font-family: var(--font-outfit);
+  font-weight: 700;
+  padding: 0 25px;
+  text-align: center;
+  position: relative;
+  top: 36px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 27px;
+  letter-spacing: 0.4px;
+}
+
+.main_container .QR_card .card_para {
+  font-family: var(--font-outfit);
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 29px;
+  position: relative;
+  top: 50px;
+  color: var(--Grayish-Blue);
+}
+
+.main_container .attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.main_container .attribution a {
+  color: #3e52a3;
+}
+
+/*--- Attribution Style ---*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
